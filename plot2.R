@@ -1,4 +1,4 @@
-# Load dataframe valued for dates from 2007-02-01 to 2007-02-02, corresponding to rows from 66638 to 69517
+# The dataset dates (first field) are in sorted order ==>  dates from 2007-02-01 to 2007-02-02 are all packed in rows from 66638 to 69517
 D <- as.data.frame(read.table('household_power_consumption.txt', sep=';', na.strings="?", stringsAsFactors=FALSE, skip=66638-1, nrows=69517-(66638-1)))
 
 # Build a DATE column to make plotting of X axis easier
